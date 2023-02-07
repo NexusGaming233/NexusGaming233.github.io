@@ -63,61 +63,17 @@
 								<a href="https://domain.ext/path" class="button n04"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 2x Quad</span></a>
 							</li>
 						</ul>
-<ul id="buttons08" class="style2 buttons">
-  <li>
-    <a href="steam://connect/us3xduo.nexusrust.co:28015" class="button n01">
-      <svg><use xlink:href="assets/icons.svg#link"></use></svg>
-      <span class="label">US 3x Duo</span>
-    </a>
-  </li>
-  <li>
-    <a href="steam://connect/us3xtrio.nexusrust.co:28015" class="button n02">
-      <svg><use xlink:href="assets/icons.svg#link"></use></svg>
-      <span class="label">US 3x Trio</span>
-    </a>
-  </li>
-  <li>
-    <a href="steam://connect/us3xquad.nexusrust.co:28015" class="button n03">
-      <svg><use xlink:href="assets/icons.svg#link"></use></svg>
-      <span class="label">US 3x Quad</span>
-    </a>
-  </li>
-  <li>
-    <a href="steam://connect/us5x.nexusrust.co:28015" class="button n04">
-      <svg><use xlink:href="assets/icons.svg#link"></use></svg>
-      <span class="label">5x No BPs</span>
-      <span id="playerCount" class="player-count"></span>
-    </a>
-  </li>
-</ul>
-
-<script>
-  // Replace with your BattleMetrics API key
-  const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjM5NzE4MDE2ZjZlYjY1NmMiLCJpYXQiOjE0NzgwMzc1MjQsIm5iZiI6MTQ3ODAzNzUyNCwiaXNzIjoiaHR0cHM6Ly93d3cuYmF0dGxlbWV0cmljcy5jb20iLCJzdWIiOiJ1cm46dXNlcjoxIn0.iwwHt2lvBxlBqcEm7HrX1b1Rb9MXcMghUY5xspluWgw";
-
-  // Replace with the server ID you want to retrieve player count information for
-  const SERVER_ID = 18563791;
-
-  // Function to retrieve player count information from the BattleMetrics API
-  function getPlayerCount() {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", `https://api.battlemetrics.com/servers/${SERVER_ID}/players?filter[online]=true&page[limit]=1`, true);
-    xhr.setRequestHeader("Authorization", `Bearer ${API_KEY}`);
-    xhr.onreadystatechange = function() {
-      if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-        const response = JSON.parse(this.responseText);
-        const playerCount = response.meta.total;
-        document.getElementById("playerCount").innerHTML = `(${playerCount} players)`;
-      }
-    };
-    xhr.send();
-  }
-
-  // Call the function to retrieve player count information when the page loads
-  document.addEventListener("DOMContentLoaded", function() {
-    getPlayerCount();
-  });
-</script>
+						<ul id="buttons08" class="style2 buttons">
+							<li>
+								<a href="steam://connect/us3xduo.nexusrust.co:28015" class="button n01"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 3x Duo</span></a>
+							</li><li>
+								<a href="steam://connect/us3xtrio.nexusrust.co:28015" class="button n02"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 3x Trio</span></a>
+							</li><li>
+								<a href="steam://connect/us3xquad.nexusrust.co:28015" class="button n03"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 3x Quad</span></a>
+							</li><li>
+								<a href="steam://connect/us5x.nexusrust.co:28015" class="button n04"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">5x No BPs</span></a>
+							</li>
+						</ul>
 					</section>
 					<section id="done-section"></section>
 				</div>
