@@ -1,9 +1,116 @@
-<!DOCTYPE html>
-<html>
-<body bgcolor="black">
-<marquee width="100%" direction="right" height="100px" scrollamount ="25">
-<font color ="#FFFFFF" font size ="32">IN PROGRESS...
-</font>
-</marquee>
-</body>
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Nexus Rust</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="color-scheme" content="light only" />
+		<meta name="description" content="Rust" />
+		<meta property="og:site_name" content="Nexus Rust" />
+		<meta property="og:title" content="Nexus Rust" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Rust" />
+		<link href="https://fonts.googleapis.com/css?display=swap&family=Kanit:200,200italic,400,400italic%7CInter:500,500italic,400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="assets/main.css" />
+		<noscript><link rel="stylesheet" href="assets/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<section id="home-section">
+						<div id="container04" class="style1 container default full">
+							<div class="wrapper">
+								<div class="inner" data-onvisible-trigger="1">
+									<div id="image01" class="image" data-position="center">
+										<span class="frame"><img src="assets/images/image01.png" alt="" /></span>
+									</div>
+									<p id="text20" class="style3"><span class="p">Welcome to Nexus Rust<br /><em>It&#039;s probably a skill diff</em></span></p>
+									<ul id="buttons05" class="buttons">
+										<li>
+											<a href="https://store.nexusrust.co" class="button n01"><svg><use xlink:href="assets/icons.svg#cart"></use></svg><span class="label">Store</span></a>
+										</li><li>
+											<a href="https://nexusrust.link/" class="button n02"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">Link</span></a>
+										</li><li>
+											<a href="https://discord.gg/jjjtBYrHvE" class="button n03"><svg><use xlink:href="assets/icons.svg#discord"></use></svg><span class="label">Discord</span></a>
+										</li><li>
+											<a href="#" onclick="_nextScrollPoint(event);" class="button n04"><svg><use xlink:href="assets/icons.svg#information"></use></svg><span class="label">Server Info</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<p id="text01" data-scroll-id="start" data-scroll-behavior="center" data-scroll-offset="0" data-scroll-invisible="1" class="style1"><strong>Click to Connect</strong></p>
+						<ul id="buttons02" class="style2 buttons">
+							<li>
+								<a href="https://domain.ext/path" class="button n01"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 1x Solo</span></a>
+							</li><li>
+								<a href="https://domain.ext/path" class="button n02"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 1x Duo</span></a>
+							</li><li>
+								<a href="https://domain.ext/path" class="button n03"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 1x Trio</span></a>
+							</li><li>
+								<a href="https://domain.ext/path" class="button n04"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 1x Quad</span></a>
+							</li>
+						</ul>
+						<ul id="buttons01" class="style2 buttons">
+							<li>
+								<a href="https://domain.ext/path" class="button n01"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 2x Solo</span></a>
+							</li><li>
+								<a href="https://domain.ext/path" class="button n02"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 2x Duo</span></a>
+							</li><li>
+								<a href="https://domain.ext/path" class="button n03"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 2x Trio</span></a>
+							</li><li>
+								<a href="https://domain.ext/path" class="button n04"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 2x Quad</span></a>
+							</li>
+						</ul>
+						<ul id="buttons08" class="style2 buttons">
+							<li>
+								<a href="steam://connect/us3xduo.nexusrust.co:28015" class="button n01"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 3x Duo</span></a>
+							</li><li>
+								<a href="steam://connect/us3xtrio.nexusrust.co:28015" class="button n02"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 3x Trio</span></a>
+							</li><li>
+								<a href="steam://connect/us3xquad.nexusrust.co:28015" class="button n03"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">US 3x Quad</span></a>
+							</li><li>
+								<a href="steam://connect/us5x.nexusrust.co:28015" class="button n04"><svg><use xlink:href="assets/icons.svg#link"></use></svg><span class="label">5x No BPs</span></a>
+							</li>
+						</ul>
+					</section>
+					<section id="done-section">
+						<div id="embed01">
+							<div id="server-population"></div>
+							
+							<script>
+							$(document).ready(function() {
+							function updatePopulation() {
+							$.ajax({
+							url: "https://api.battlemetrics.com/players?filter[server]=18563791",
+							headers: {
+							"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjM5NzE4MDE2ZjZlYjY1NmMiLCJpYXQiOjE0NzgwMzc1MjQsIm5iZiI6MTQ3ODAzNzUyNCwiaXNzIjoiaHR0cHM6Ly93d3cuYmF0dGxlbWV0cmljcy5jb20iLCJzdWIiOiJ1cm46dXNlcjoxIn0.iwwHt2lvBxlBqcEm7HrX1b1Rb9MXcMghUY5xspluWgw"
+							},
+							success: function(data) {
+							var population = data.data.length;
+							$("#server-population").html(population + " players online");
+							}
+							});
+							}
+							
+							setInterval(updatePopulation, 60000);
+							updatePopulation();
+							});
+							</script>
+							
+							<style>
+							#server-population {
+							font-size: 18px;
+							font-weight: bold;
+							text-align: center;
+							}
+							</style>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script src="assets/main.js"></script>
+	</body>
 </html>
